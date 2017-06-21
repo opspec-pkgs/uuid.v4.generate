@@ -1,0 +1,14 @@
+name: uuid.v4.generate
+description: generates a v4 RFC4122 compliant UUID
+outputs:
+  uuid:
+    string:
+      description: the generated v4 UUID
+version: 1.0.0
+run:
+  container:
+    image: { ref: 'opspecpkgs/uuid.v4.generate:1.0.0' }
+    cmd: [node, /index.js]
+    files: { /index.js }
+    stdOut:
+      uuid=: uuid
