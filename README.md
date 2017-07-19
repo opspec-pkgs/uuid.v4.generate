@@ -22,7 +22,8 @@ opctl run github.com/opspec-pkgs/uuid.v4.generate#VERSION
 ```yaml
 op:
   pkg: { ref: github.com/opspec-pkgs/uuid.v4.generate#VERSION }
-  outputs: { uuid: }
+  outputs:
+    uuid:
 ```
 
 # Support
