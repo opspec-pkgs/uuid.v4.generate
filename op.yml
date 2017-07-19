@@ -1,4 +1,4 @@
-name: uuid.v4.generate
+name: github.com/opspec-pkgs/uuid.v4.generate
 description: generates a v4 RFC4122 compliant UUID
 outputs:
   uuid:
