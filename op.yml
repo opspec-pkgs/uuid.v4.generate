@@ -4,11 +4,11 @@ outputs:
   uuid:
     string:
       description: the generated v4 UUID
-version: 1.0.0
+version: 1.0.1
 run:
   container:
-    image: { ref: 'opspecpkgs/uuid.v4.generate:1.0.0' }
-    cmd: [node, /index.js]
-    files: { /index.js }
-    stdOut:
-      uuid=: uuid
+    image: { ref: 'opspecpkgs/uuid.v4.generate:1.0.1' }
+    cmd: [node, /cmd.js]
+    files:
+      /cmd.js:
+      /uuid: $(uuid)

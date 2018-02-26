@@ -1,32 +1,35 @@
 [![Build Status](https://travis-ci.org/opspec-pkgs/uuid.v4.generate.svg?branch=master)](https://travis-ci.org/opspec-pkgs/uuid.v4.generate)
 
+
 # Problem statement
 
 generates a v4 RFC4122 compliant UUID
 
+# Format
+
+this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opspec-0.1.5-brightgreen.svg?colorA=6b6b6b&colorB=fc16be)](https://opspec.io/0.1.5/packages.html) format
+
 # Example usage
 
-> note: in examples, VERSION represents a version of the
-> uuid.v4.generate pkg
-
-## install
+## Install
 
 ```shell
-opctl pkg install github.com/opspec-pkgs/uuid.v4.generate#VERSION
+opctl pkg install github.com/opspec-pkgs/uuid.v4.generate#1.0.1
 ```
 
-## run
+## Run
 
 ```
-opctl run github.com/opspec-pkgs/uuid.v4.generate#VERSION
+opctl run github.com/opspec-pkgs/uuid.v4.generate#1.0.1
 ```
 
-## compose
+## Compose
 
 ```yaml
 op:
-  pkg: { ref: github.com/opspec-pkgs/uuid.v4.generate#VERSION }
-  outputs:
+pkg: { ref: github.com/opspec-pkgs/uuid.v4.generate#1.0.1 }
+inputs:
+outputs:
     uuid:
 ```
 
