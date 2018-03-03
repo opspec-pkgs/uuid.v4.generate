@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/opspec-pkgs/uuid.v4.generate.svg?branch=master)](https://travis-ci.org/opspec-pkgs/uuid.v4.generate)
 
-
 # Problem statement
 
 generates a v4 RFC4122 compliant UUID
@@ -27,9 +26,8 @@ opctl run github.com/opspec-pkgs/uuid.v4.generate#1.0.1
 
 ```yaml
 op:
-pkg: { ref: github.com/opspec-pkgs/uuid.v4.generate#1.0.1 }
-inputs:
-outputs:
+  pkg: { ref: github.com/opspec-pkgs/uuid.v4.generate#1.0.1 }
+  outputs:
     uuid:
 ```
 
